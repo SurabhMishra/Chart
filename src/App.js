@@ -1,4 +1,6 @@
 import React from 'react';
+
+import NewExpense from './component/NewExpense/NewExpense';
 import Expanse from './component/Expanse/Expanse';
 
 // arrow functioms
@@ -74,6 +76,7 @@ const App = () =>{
   return (
     <>
       <div>
+        <NewExpense />
         <Expanse items={expanses} />
       </div>
     </>
