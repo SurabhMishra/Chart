@@ -23,7 +23,7 @@ const ExpanseItem = (props) => {
                 <div className="expanse_item_price">{props.LocationOfExpenditure}</div>
                 <div className="expanse_item_price">Rs {props.amount}</div>
             </div>
-            <button onClick={handleDeleteClick}>Delete Expense</button>
+            <button  onClick={handleDeleteClick}>Delete Expense</button>
         </div>
     );
 }
