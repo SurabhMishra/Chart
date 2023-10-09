@@ -26,7 +26,7 @@ const DUMMY_EXPENSES = [
     expanseItem: 'Expanse Item',
     title: 'Toilet Paper',
     amount: 999,
-    date: new Date(2023, 4, 4),
+    date: new Date(2022, 4, 4),
     LocationOfExpenditure: 'Location:- Bhadohi',
   },
   {
@@ -42,7 +42,7 @@ const DUMMY_EXPENSES = [
     expanseItem: 'Expanse Item',
     title: 'New TV',
     amount: 4000,
-    date: new Date(2023, 6, 6),
+    date: new Date(2023, 6, 10),
     LocationOfExpenditure: 'Location:- Varanasi',
     expanseAmount: 'Expanse of Amount',
   },
@@ -51,7 +51,7 @@ const DUMMY_EXPENSES = [
     expanseItem: 'Expanse Item',
     title: 'Movie',
     amount: 700,
-    date: new Date(2023, 8, 15),
+    date: new Date(2022, 8, 1),
     LocationOfExpenditure: 'Location:- Lucknow',
   },
   

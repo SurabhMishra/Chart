@@ -3,19 +3,36 @@ import ExpensesFilter from './ExpensesFilter';
 import './Expanse.css';
 import React, { useState } from 'react';
 
- const Expanse=(props) =>{
+const Expanse = (props) => {
     // filter
     const [filterYear, setFilteredYear] = useState('2020');
 
-    const filterChangeHandler = selectedYear =>{
+    const filterChangeHandler = selectedYear => {
         setFilteredYear(selectedYear);
     };
+
+    const filteredExpenses = props.items.filter(expense => {
+     return expense.date.getFullYear().toString() === filterYear;
+    });
 
     return (
         <>
             <div className="expanses">
-                <ExpensesFilter selected={filterYear} onChangeFilter={filterChangeHandler}/>
-                <ExpanseItem expanseItem={props.items[0].expanseItem}
+                <ExpensesFilter selected={filterYear} onChangeFilter={filterChangeHandler}
+                />
+
+                {filteredExpenses.map((expense) => (
+                    <ExpanseItem
+                        key={expense.id}
+                        title={expense.title}
+                        amount={expense.amount}
+                        date={expense.date}
+                    />
+                ))}
+
+
+
+                {/* <ExpanseItem expanseItem={props.items[0].expanseItem}
                     title={props.items[0].title}
                     date={props.items[0].date}
                     LocationOfExpenditure={props.items[0].LocationOfExpenditure}
@@ -50,7 +67,7 @@ import React, { useState } from 'react';
                     date={props.items[5].date}
                     LocationOfExpenditure={props.items[5].LocationOfExpenditure}
                     amount={props.items[5].amount}
-                />
+                /> */}
             </div>
         </>
 
