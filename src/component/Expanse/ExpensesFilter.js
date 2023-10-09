@@ -22,3 +22,5 @@ const ExpensesFilter = (props) => {
     );
 };
 export default ExpensesFilter;
+
+<TextInput label="Name" value={name} onChange={handleNameChange} />

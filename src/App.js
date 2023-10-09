@@ -10,7 +10,7 @@ const DUMMY_EXPENSES = [
     expanseItem: 'Expanse Item',
     title: 'Food',
     amount: 1000,
-    date: new Date(2022, 2, 15),
+    date: new Date(2020, 2, 15),
     LocationOfExpenditure: 'Location:- Restaurant Fifty Five East',
   },
   {
