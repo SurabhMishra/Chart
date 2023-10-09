@@ -25,7 +25,8 @@ const ExpanseItem = (props) => {
     };
 
     return (
-        <div className="expanse_item">
+        <li>
+            <div className="expanse_item">
             <div>{props.expanseItem}</div>
             <ExpanseDate date={props.date} />
             <div className="expanse_item_discription">
@@ -36,6 +37,7 @@ const ExpanseItem = (props) => {
             {/* <button onClick = {clickHandler}>Change Title</button> */}
             <button onClick = {handleDeleteClick}>Delete Expense</button>
         </div>
+        </li>
     );
 }
 

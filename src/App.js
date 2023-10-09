@@ -10,7 +10,7 @@ const DUMMY_EXPENSES = [
     expanseItem: 'Expanse Item',
     title: 'Food',
     amount: 1000,
-    date: new Date(2023, 2, 15),
+    date: new Date(2022, 2, 15),
     LocationOfExpenditure: 'Location:- Restaurant Fifty Five East',
   },
   {
@@ -18,7 +18,7 @@ const DUMMY_EXPENSES = [
     expanseItem: 'Expanse Item',
     title: 'New Desk (Wooden)',
     amount: 450,
-    date: new Date(2023, 5, 12),
+    date: new Date(2022, 5, 12),
     LocationOfExpenditure: 'Location:- Allahabad',
   },
   {
@@ -34,7 +34,7 @@ const DUMMY_EXPENSES = [
     expanseItem: 'Expanse Item',
     title: 'Car Insurance',
     amount: 5000,
-    date: new Date(2023, 9, 11),
+    date: new Date(2022, 9, 11),
     LocationOfExpenditure: 'Location:- Suriyawan',
   },
   {
@@ -42,7 +42,7 @@ const DUMMY_EXPENSES = [
     expanseItem: 'Expanse Item',
     title: 'New TV',
     amount: 4000,
-    date: new Date(2023, 6, 10),
+    date: new Date(2022, 6, 10),
     LocationOfExpenditure: 'Location:- Varanasi',
     expanseAmount: 'Expanse of Amount',
   },
@@ -51,7 +51,7 @@ const DUMMY_EXPENSES = [
     expanseItem: 'Expanse Item',
     title: 'Movie',
     amount: 700,
-    date: new Date(2022, 8, 1),
+    date: new Date(2021, 8, 1),
     LocationOfExpenditure: 'Location:- Lucknow',
   },
   
