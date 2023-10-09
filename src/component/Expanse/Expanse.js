@@ -1,12 +1,20 @@
 import ExpanseItem from './ExpanseItem';
+import ExpensesFilter from './ExpensesFilter';
 import './Expanse.css';
-import React from 'react';
+import React, { useState } from 'react';
 
  const Expanse=(props) =>{
+    // filter
+    const [filterYear, setFilteredYear] = useState('2020');
+
+    const filterChangeHandler = selectedYear =>{
+        setFilteredYear(selectedYear);
+    };
 
     return (
         <>
             <div className="expanses">
+                <ExpensesFilter selected={filterYear} onChangeFilter={filterChangeHandler}/>
                 <ExpanseItem expanseItem={props.items[0].expanseItem}
                     title={props.items[0].title}
                     date={props.items[0].date}
